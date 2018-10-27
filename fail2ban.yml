@@ -14,7 +14,7 @@
   
 
     - name: Run fail2ban on RedHat 6
-      when: ( ansible_os_family == "RedHat" and ansible_distrubution_major_version == "6" )
+      when: ( ansible_os_family == "RedHat" and ansible_distribution_major_version == "6" )
       service:
         name: fail2ban
         state: restarted
